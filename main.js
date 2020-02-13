@@ -130,7 +130,7 @@ function weird(string, num){
     num2= num2 + 1
   }
 }
-weird('hello', 4);
+weird('Good-bye', 4);
 
 addChallengeBanner(12);
 letter = 0;
@@ -142,6 +142,45 @@ function individual(string){
 }
 individual('think');
 addChallengeBanner(13);
+
+num13 = 1;
+function everyOther(string){
+  while(num13 < string.length){
+  console.log(string[num13]);
+  num13 = num13 + 2;
+  }
+}
+everyOther('Nobody');
+
 addChallengeBanner(14);
+
+function backString(string){
+  num14 = string.length -1;
+  while(num14 > -1){
+  console.log(string[num14]);
+  num14 = num14 - 1;
+  }
+}
+backString('backwards');
+
 addChallengeBanner(15);
+
+function fizzy(num2){
+  let stuff = 0;
+  while (num2 > stuff){
+    stuff = stuff + 1;
+    if (stuff % 3 === 0 && stuff % 5 === 0){
+      console.log('FizzBuzz')}
+      else if (stuff % 3 === 0){
+        console.log('Fizz')
+      }
+      else if (stuff % 5 === 0){
+        console.log('Buzz')
+      }else {
+        console.log(stuff)
+      }
+}
+}
+fizzy(15);
 addChallengeBanner(16);
+
