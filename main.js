@@ -133,6 +133,14 @@ function weird(string, num){
 weird('hello', 4);
 
 addChallengeBanner(12);
+letter = 0;
+function individual(string){
+  while(letter < string.length){
+  console.log(string[letter]);
+  letter = letter + 1;
+  }
+}
+individual('think');
 addChallengeBanner(13);
 addChallengeBanner(14);
 addChallengeBanner(15);
