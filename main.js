@@ -1,5 +1,6 @@
 function addChallengeBanner (num){
   console.log('######### '+'Challenge ' + num + ' #########')
+  // couldve written (`###### Challenge ${num} #####`)
 }
 addChallengeBanner(1);
 function fiveThings(){
@@ -14,10 +15,10 @@ fiveThings();
 addChallengeBanner(2);
 
 function stopHere(num2){
-  let add = 0;
-  while (num2 > add){
-    add = add + 1;
-    console.log(add)
+  let num = 1;
+  while (num <= num2){
+    num ++;
+    console.log(num)
   }
 }
 stopHere(6)
@@ -34,7 +35,7 @@ inclusive(3,6)
 addChallengeBanner(4);
 
 function evenOrOdd(num){
-  let counter = 0
+  let counter = 1
 while (num > counter){
   if (counter % 2 === 0){
   console.log(counter + ' Even')
@@ -47,6 +48,7 @@ counter = counter + 1;
 }
 evenOrOdd(6);
 addChallengeBanner(5);
+
 function evenOnly(num){
   let counter = 0
 while (num > counter){
@@ -123,8 +125,9 @@ function myString (words){
 
 addChallengeBanner(11);
 
-num2 = 1
+
 function weird(string, num){
+  let num2 = 1
   while (num2 <= num){
     console.log(string)
     num2= num2 + 1
@@ -143,8 +146,8 @@ function individual(string){
 individual('think');
 addChallengeBanner(13);
 
-num13 = 1;
 function everyOther(string){
+  let num13 = 1;
   while(num13 < string.length){
   console.log(string[num13]);
   num13 = num13 + 2;
@@ -183,4 +186,6 @@ function fizzy(num2){
 }
 fizzy(15);
 addChallengeBanner(16);
+
+// function fibonacci (num)
 
